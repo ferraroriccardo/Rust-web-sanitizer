@@ -1,0 +1,7 @@
+services:
+  app:
+    image: rust:1.97.1
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: tail -f /dev/null

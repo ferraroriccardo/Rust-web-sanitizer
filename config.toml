@@ -1,0 +1,41 @@
+max_parser_memory = 10485760 # 10 MB
+max_files_allowed = 500
+max_recursion_depth = 10
+fetch_timeout_secs = 10
+
+[script]
+need_replace = false
+filters = [""]
+[on_prefix]
+# cannot use replacements
+filters = [""]
+[meta]
+need_replace = false
+# no filters needed 
+[iframe]
+need_replace = true # in this case, the entire HTML must be completely blocked
+filters = [""]
+[object]
+need_replace = false
+filters=[""]
+[embed]
+need_replace = false
+filters=[""]
+[data_uri]
+need_replace = false
+filters = [""]
+[javascript_uri]
+need_replace = false
+# no filters needed
+[links]
+need_replace = true
+filters = [""]
+[forms]
+need_replace = true
+filters = [""]
+[images]
+need_replace = true
+filters = [""]
+[styless]
+need_replace = true
+filters = [""]
